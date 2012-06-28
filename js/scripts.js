@@ -25,6 +25,25 @@
 	$(window).on('resize', recalculate);
 
 	var $slagalica = $("#slagalica");
+	var $inputs = $slagalica.find('.inputs input');
+	$inputs.on('keyup', function(e) {
+	    if(e.keyCode == 13) {
+	      $slagalica.find(".btn-primary").trigger('click');
+	      return false;
+	    }
+	    if(e.keyCode < 65 || e.keyCode > 90 && e.keyCode != 220 && e.keyCode != 221 && e.keyCode != 219 && e.keyCode != 186 && e.keyCode != 222) {
+	      return false;
+	    };
+	    if(e.keyCode == 9) return false;
+	    if(e.keyCode == 78 || e.keyCode === 76) return false;
+	    var current = $(this).index();
+	    if(current == 11) {
+	      $slagalica.find(".btn-primary").trigger('click');
+	      return false;
+	    }
+	    $inputs.eq(current+1).focus();
+	});
+
 	$slagalica.find(".btn-primary").on('click', function() {
 		var error = false,
 			letters = []; 
@@ -58,6 +77,24 @@
 	});
 
 	var $mojbroj = $("#moj-broj");
+
+	$mojbroj.find('input').on('keyup', function(e) {
+        if(e.keyCode == 13) {
+          $mojbroj.find(".btn-primary").trigger('click');
+          return false;
+        }
+        var $this = $(this);
+
+        if($this.val().length >= parseInt($this.attr("maxlength"),10) ) {
+          var index = $this.index();
+          if(index == 0 && $this.attr("id") == "resenje") {
+            $('.brojevi').find('input').eq(0).focus();
+          } else {
+            $('.brojevi').find('input').eq(index+1).focus();
+          }
+        }
+      });
+
 	$mojbroj.find(".btn-primary").on('click', function() {
 		var error = false,
 			numbers = [];
@@ -84,6 +121,12 @@
 	});
 
 	var $asocijacije = $("#asocijacije");
+	$asocijacije.find('.inputs input').on('keyup', function(e) {
+		if(e.keyCode == 13) {
+          $asocijacije.find(".btn-primary").trigger('click');
+          return false;
+        }
+	});
 	$asocijacije.find(".btn-primary").on('click', function() {
 		var error = true,
 			asocijacije = [];
@@ -136,5 +179,6 @@
 
 	$('.reset').on('click', function() {
 		$("input[type=text]").val("");
+		$("input[type=number]").val("");
 	})
 })();

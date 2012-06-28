@@ -16,9 +16,11 @@ body, button, input, select, textarea { font-family: sans-serif; color: #222; }
 
 a { color: #D70060; text-decoration:none; }
 a:hover { color: #06e; text-decoration:underline;}
-a:focus { outline: thin dotted; }
+a:focus { outline: none; }
 a:hover, a:active { outline: 0; }
-
+*:focus {
+  outline:none;
+}
 abbr[title] { border-bottom: 1px dotted; }
 b, strong { font-weight: bold; }
 blockquote { margin: 1em 40px; }
@@ -81,7 +83,6 @@ nav ul {
 nav ul li {
   display:inline-block;
   margin: 0 5px;
-  font-size:2em;
 }
 nav ul li a:hover {
   text-decoration:none;
