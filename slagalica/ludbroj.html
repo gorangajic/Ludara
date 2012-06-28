@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Slagalica</title>
+  <link rel="stylesheet" type="text/css" href="/css/style.min.css" />  <meta name="description" content="Aplikacija za slagalicu koja kreira slova.">
+  <meta name="keywords" content="slagalica, asocijacije, mojbroj, ludbroj, slaglica, facebook">
+  <meta property="og:title" content="Ludara.com - Asocijacije">
+  <meta property="og:site_name" content="Ludara.com">
+  <meta property="og:description" content="Ludara.com je sajt namenjen zabavi, dobrim idejama i druženju.">
+  <meta property="og:image" content="/assets/ludak.jpg">
+</head>
+<body>
+  <div class="wrapper">
+
+  <div class="header clearfix">
+
+    <h1 id="logo"><a href="/">Ludara.com</a></h1>
+
+    <div class="featured">
+
+    </div>
+
+    <div class="social">
+
+     <a href="http://facebook.com/ludara" class="fb ir">
+
+     </a> 
+
+    </div>
+
+    <nav id="navigation">
+
+      <ul class="main-nav">
+
+        <li><a href="/slagalica/" class="ir slagalica"> Slagalica </a></li>
+
+        <li><a href="/slagalica/ludbroj.html" class="ir ludbroj"> Ludbroj </a></li>
+
+        <li><a href="/slagalica/asocijacije.html" class="ir asocijacije">Asocijacije</a></li>
+
+      </ul>
+
+    </nav>
+
+  </div>
+
+  <div class="container">
+
+    <div class="top"></div>
+  <div class="content ludbroj">
+
+    <div class="clearfix"><h2 class="title">Lud broj</h2></div>
+
+    <div class="lb">
+
+        <div class="inputs"><div class="resenje"><input type="text" maxlength="3" placeholder="resenje" class="lud-resenje"></div>
+
+            <div class="polja"><input type="text" maxlength="1" class="lud-a"><input type="text" maxlength="1" class="lud-b"><input type="text" maxlength="1" class="lud-a"><input type="text" maxlength="1" class="lud-b"><input type="text" maxlength="2" class="lud-e"><input type="text" maxlength="3" class="lud-f"><button id="search"></button>
+
+            </div>
+
+        </div>
+
+        <div id="loading"></div>
+
+        <div id="refresh"></div>
+
+        <div id="message"></div>
+
+    </div>
+
+    <ul id="searches"></ul>
+
+    <div class="manual">
+
+        <h3>Važno!!! Fair play</h3>
+
+        <p>
+
+            <strong>Da bi koristili ludaru i kad je fair play uključen morate istalirati našu ekstenziju <a href="/slagalica-fair-play.user.js" target="_blank">fair play</a> za <a href="http://google.com/chrome" target="_blank">Google Chrome</a> 
+
+            <br/>
+
+            Ako vam nije jasno kako napravili smo malo upustvo za vas - <a href="http://www.youtube.com/watch?v=dpwV-sDxi-k" target="_blank">UPUSTVO</a>
+
+            </strong>
+
+        </p>
+
+        <h3>Napomena:</h3>
+
+        <p>Ludi broj je u test fazi tako da ako pronadjete neku gresku ili imate nesto da nas pitate slobodno nas kontaktirajte na
+
+            <a href="mailto:contact@ludara.com">contact@ludara.com</a></p>
+
+        <p class="greeting">Želimo Vam,<br>fer-play!
+
+        </p>
+
+        <p>ekipa
+
+            <a href="http://ludara.com">ludara.com</a></p>
+
+    </div>
+
+</div>
+    <div class="bottom">
+
+    <div class="fb-like" data-href="https://www.facebook.com/ludara" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true"></div>
+
+    <g:plusone size="small"></g:plusone>
+
+  </div>
+
+  </div><!--end container-->
+
+  <div class="footer">
+
+    <a href="http://design4q.com" title="Design 4 Quality" target="_blank">Made with ♥ Design4q </a>
+
+  </div>
+
+</div><!--end .wrapper--> 
+
+
+  <script type="text/javascript" src="/js/jquery.min.js"></script>  <script src="/js/slagalica.min.js?v=1"> </script>
+   <script>
+      (function() {
+        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        po.src = 'https://apis.google.com/js/plusone.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+      })();
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-12067813-12']);
+      _gaq.push(['_setDomainName', 'ludara.com']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+    <div id="fb-root"></div>
+    <script>
+      (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=344798672209876";
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+</body>
+</html>

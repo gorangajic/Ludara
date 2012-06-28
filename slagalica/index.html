@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Slagalica</title>
+  <link rel="stylesheet" type="text/css" href="/css/style.css" />  <meta name="description" content="Aplikacija za slagalicu koja kreira slova.">
+  <meta name="keywords" content="slagalica, asocijacije, mojbroj, ludbroj, slaglica, facebook">
+  <meta property="og:title" content="Ludara.com - Asocijacije">
+  <meta property="og:site_name" content="Ludara.com">
+  <meta property="og:description" content="Ludara.com je sajt namenjen zabavi, dobrim idejama i druženju.">
+  <meta property="og:image" content="/assets/ludak.jpg">
+</head>
+<body>
+  <div class="wrapper">
+
+  <div class="header clearfix">
+
+    <h1 id="logo"><a href="/">Ludara.com</a></h1>
+
+    <div class="featured">
+
+    </div>
+
+    <div class="social">
+
+     <a href="http://facebook.com/ludara" class="fb ir">
+
+     </a> 
+
+    </div>
+
+    <nav id="navigation">
+
+      <ul class="main-nav">
+
+        <li><a href="/slagalica/" class="ir slagalica"> Slagalica </a></li>
+
+        <li><a href="/slagalica/ludbroj.html" class="ir ludbroj"> Ludbroj </a></li>
+
+        <li><a href="/slagalica/asocijacije.html" class="ir asocijacije">Asocijacije</a></li>
+
+      </ul>
+
+    </nav>
+
+  </div>
+
+  <div class="container">
+
+    <div class="top"></div>
+  <div class="content slagalica">
+
+    <h2 class="title">Slagalica</h2>
+
+    <div class="letters"><input type="text" maxlength="2" class="box1"><input type="text" maxlength="2" class="box2"><input type="text" maxlength="2" class="box3"><input type="text" maxlength="2" class="box4"><input type="text" maxlength="2" class="box1"><input type="text" maxlength="2" class="box2"><input type="text" maxlength="2" class="box3"><input type="text" maxlength="2" class="box4"><input type="text" maxlength="2" class="box1"><input type="text" maxlength="2" class="box2"><input type="text" maxlength="2" class="box3"><input type="text" maxlength="2" class="box4"><button id="search">go!</button></div>
+
+    <div id="loading"></div>
+
+    <div id="refresh" class="ir">Refresh</div>
+
+    <div id="message"></div>
+
+    <div class="manual">
+
+        <h3>Važno!!! Fair play</h3>
+
+        <p>
+
+            <strong>Da bi koristili ludaru i kad je fair play uključen morate istalirati našu ekstenziju <a href="/slagalica-fair-play.user.js" target="_blank">fair play</a> za <a href="http://google.com/chrome" target="_blank">Google Chrome</a> 
+
+            <br/>
+
+            Ako vam nije jasno kako napravili smo malo upustvo za vas - <a href="http://www.youtube.com/watch?v=dpwV-sDxi-k" target="_blank">UPUSTVO</a>
+
+            </strong>
+
+        </p>
+
+        <h3>Upustvo:</h3>
+
+        <ul>
+
+            <li>
+
+                Program automatski prebacuje u novo polje osim kad se pojavi slovo
+
+                <strong>N
+
+                </strong>ili
+
+                <strong>L
+
+                </strong>
+
+                <br>zato što može da se desi da želite da ukucate slovo
+
+                <strong>Nj
+
+                </strong>ili
+
+                <strong>Lj</strong></li>
+
+            <li>Da bi dobili rešenje potrebno je popuniti sva polja</li><li>Moguće je koristiti slova kao sto su (č, ć, š, đ, ž)</li></ul>
+
+        <h3>Napomena:</h3><p>
+
+            Ludara je u izgradnji tako da se u bazi ne nalaze sve reči i neke reči su<br>napisane korišćenjem osiromašene latinice (bez č, ć, š, đ, ž)</p>
+
+        <p>Ako pronađete neku grešku slobodno nas kontaktirajte na
+
+            <a href="mailto:contact@ludara.com">contact@ludara.com</a></p>
+
+        <p class="greeting">Želimo Vam,<br>fer-play!
+
+        </p>
+
+        <p>
+
+            ekipa
+
+            <a href="http://ludara.com">ludara.com</a></p>
+
+    </div>
+
+    <ul id="searches"></ul>
+
+</div>
+    <div class="bottom">
+
+    <div class="fb-like" data-href="https://www.facebook.com/ludara" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true"></div>
+
+    <g:plusone size="small"></g:plusone>
+
+  </div>
+
+  </div><!--end container-->
+
+  <div class="footer">
+
+    <a href="http://design4q.com" title="Design 4 Quality" target="_blank">Made with ♥ Design4q </a>
+
+  </div>
+
+</div><!--end .wrapper--> 
+
+
+  <script type="text/javascript" src="/js/jquery.min.js"></script>  <script src="/js/slagalica.js?v=17"> </script>
+   <script>
+      (function() {
+        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        po.src = 'https://apis.google.com/js/plusone.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+      })();
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-12067813-12']);
+      _gaq.push(['_setDomainName', 'ludara.com']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+    <div id="fb-root"></div>
+    <script>
+      (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=344798672209876";
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+</body>
+</html>
